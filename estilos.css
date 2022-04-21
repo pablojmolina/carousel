@@ -1,0 +1,56 @@
+* {box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    padding: 0px 0px;
+	background-size: cover;
+	background-repeat: no-repeat;
+    
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 400%;
+    font-weight: bold;
+    color: orange;
+    text-shadow: 0.5rem;
+    padding-top: 10%;
+    text-align: center;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 125%;
+    color: white;
+    padding-top: 5%;
+    text-align: center;
+    background-color: rgba(5, 5, 5, 0.205);
+    width: 80%;
+}
+.carousel{
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://picsum.photos/id/1002/4312/2868");
+    height: 100vh;
+    width: 100%;
+    padding: 0px 0px;
+	background-size: cover;
+    align-items: center;
+    justify-content: center;
+    /*ANIMACIONES*/
+    animation-name: trans;
+    animation-duration: 12s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+}
+@keyframes trans{
+   /* 0% {background-image: url("https://picsum.photos/id/1002/4312/2868")}*/
+    33% {background-image: url("https://picsum.photos/id/1022/6000/3376")}
+    66% {background-image: url("https://picsum.photos/id/1080/6858/4574")}
+    100% {background-image: url("https://picsum.photos/id/1002/4312/2868")}
+}
